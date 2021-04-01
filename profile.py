@@ -17,10 +17,12 @@ def profile():
     """Return results from profile form."""
 
     fullname = request.form['name']
+    age = request.form['age']
+    occupation = request.form['occupation']
     # TODO: get the values from the rest of the form
     # Add them to jsonify
     
-    return jsonify({'fullname': fullname, })
+    return jsonify({'fullname': fullname, 'age': age, 'occupation': occupation})
 
 
 
